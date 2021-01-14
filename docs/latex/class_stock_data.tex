@@ -1,0 +1,60 @@
+\hypertarget{class_stock_data}{}\doxysection{Stock\+Data Class Reference}
+\label{class_stock_data}\index{StockData@{StockData}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_stock_data_a208d963e465268a9da88a974718c8c85}{get\+Quote}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Static method that returns the most recent price of a stock. \end{DoxyCompactList}\item 
+static std\+::vector$<$ double $>$ \mbox{\hyperlink{class_stock_data_aab5c2eab18bf02b3a4905cfa498e0b53}{get\+Candle}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Static method that returns price history of a stock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_data_aab5c2eab18bf02b3a4905cfa498e0b53}\label{class_stock_data_aab5c2eab18bf02b3a4905cfa498e0b53}} 
+\index{StockData@{StockData}!getCandle@{getCandle}}
+\index{getCandle@{getCandle}!StockData@{StockData}}
+\doxysubsubsection{\texorpdfstring{getCandle()}{getCandle()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Stock\+Data\+::get\+Candle (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static method that returns price history of a stock. 
+
+This static method takes a stock symbol and returns the price history of that stock (closing price for each month of past year) 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$double$>$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_stock_data_a208d963e465268a9da88a974718c8c85}\label{class_stock_data_a208d963e465268a9da88a974718c8c85}} 
+\index{StockData@{StockData}!getQuote@{getQuote}}
+\index{getQuote@{getQuote}!StockData@{StockData}}
+\doxysubsubsection{\texorpdfstring{getQuote()}{getQuote()}}
+{\footnotesize\ttfamily double Stock\+Data\+::get\+Quote (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static method that returns the most recent price of a stock. 
+
+This static method takes a stock symbol and returns the most recent price of that stock 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stock\+Data.\+h\item 
+stock\+Data.\+cpp\end{DoxyCompactItemize}

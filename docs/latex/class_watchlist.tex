@@ -1,0 +1,244 @@
+\hypertarget{class_watchlist}{}\doxysection{Watchlist Class Reference}
+\label{class_watchlist}\index{Watchlist@{Watchlist}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_watchlist_a9e89324e05751114aee2ebfc26c8e951}{Watchlist}} ()
+\begin{DoxyCompactList}\small\item\em This method is the default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_watchlist_afc89abf585faf44c811562f692a2fe37}{$\sim$\+Watchlist}} ()
+\begin{DoxyCompactList}\small\item\em This method is the destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stock}{Stock}} \mbox{\hyperlink{class_watchlist_a40db638c2d80134ac0d98b77b37f352d}{get\+Stock}} (std\+::string stock)
+\begin{DoxyCompactList}\small\item\em This method fetches the specified stock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_watchlist_a04db7d76b7ef402d26c0cf61e9964eaf}{contains\+Stock}} (std\+::string stock)
+\begin{DoxyCompactList}\small\item\em This method checks if the stock exists when buying. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_watchlist_a8d24934ef6d960c2ea105e6186a89585}{change\+Stock\+Quantity}} (std\+::string stock, int quantity)
+\begin{DoxyCompactList}\small\item\em This method changes the stock quantity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_watchlist_a6ceb0a51617cc9cfbd41becfbb072beb}{change\+Stock\+Price}} (std\+::string stock, double price)
+\begin{DoxyCompactList}\small\item\em This method changes the stock price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_watchlist_abd0988495df1a789f0a2a7a0a7be6b15}{remove\+Stock}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em This method removes the stock from the watchlist. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_stock}{Stock}} $>$ \mbox{\hyperlink{class_watchlist_aba901fd5f666aaa91bf8aeaa45dbb4c3}{get\+Stock\+List}} ()
+\begin{DoxyCompactList}\small\item\em This method returns the \mbox{\hyperlink{class_watchlist}{Watchlist}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_watchlist_a70299a2bc3ca40537b2eda0576f42949}{insert\+To\+Stock\+List}} (\mbox{\hyperlink{class_stock}{Stock}} new\+Stock)
+\begin{DoxyCompactList}\small\item\em This method inserts a new stock to the watch list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_watchlist_a967e0292b4f040af0d164571fcf2f82d}{update\+Stock\+List}} (std\+::string stock, int shares)
+\begin{DoxyCompactList}\small\item\em This method changes the stock quantity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_watchlist_aaead9e5fc5aa237eaf6201f556ccd8e2}\label{class_watchlist_aaead9e5fc5aa237eaf6201f556ccd8e2}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_stock}{Stock}} $>$ {\bfseries stock\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_watchlist_a9e89324e05751114aee2ebfc26c8e951}\label{class_watchlist_a9e89324e05751114aee2ebfc26c8e951}} 
+\index{Watchlist@{Watchlist}!Watchlist@{Watchlist}}
+\index{Watchlist@{Watchlist}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{Watchlist()}{Watchlist()}}
+{\footnotesize\ttfamily Watchlist\+::\+Watchlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is the default constructor. 
+
+This method is the default constructor \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Tommy Xie 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_afc89abf585faf44c811562f692a2fe37}\label{class_watchlist_afc89abf585faf44c811562f692a2fe37}} 
+\index{Watchlist@{Watchlist}!````~Watchlist@{$\sim$Watchlist}}
+\index{````~Watchlist@{$\sim$Watchlist}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{$\sim$Watchlist()}{~Watchlist()}}
+{\footnotesize\ttfamily Watchlist\+::$\sim$\+Watchlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is the destructor. 
+
+This method is simply the destructor for the client class. \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jian Xie 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_watchlist_a6ceb0a51617cc9cfbd41becfbb072beb}\label{class_watchlist_a6ceb0a51617cc9cfbd41becfbb072beb}} 
+\index{Watchlist@{Watchlist}!changeStockPrice@{changeStockPrice}}
+\index{changeStockPrice@{changeStockPrice}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{changeStockPrice()}{changeStockPrice()}}
+{\footnotesize\ttfamily void Watchlist\+::change\+Stock\+Price (\begin{DoxyParamCaption}\item[{std\+::string}]{stock,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+This method changes the stock price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to change \\
+\hline
+{\em price} & The new price of the stock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_a8d24934ef6d960c2ea105e6186a89585}\label{class_watchlist_a8d24934ef6d960c2ea105e6186a89585}} 
+\index{Watchlist@{Watchlist}!changeStockQuantity@{changeStockQuantity}}
+\index{changeStockQuantity@{changeStockQuantity}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{changeStockQuantity()}{changeStockQuantity()}}
+{\footnotesize\ttfamily void Watchlist\+::change\+Stock\+Quantity (\begin{DoxyParamCaption}\item[{std\+::string}]{stock,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+This method changes the stock quantity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to change \\
+\hline
+{\em quantity} & The quantity you want to set it as an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_a04db7d76b7ef402d26c0cf61e9964eaf}\label{class_watchlist_a04db7d76b7ef402d26c0cf61e9964eaf}} 
+\index{Watchlist@{Watchlist}!containsStock@{containsStock}}
+\index{containsStock@{containsStock}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{containsStock()}{containsStock()}}
+{\footnotesize\ttfamily bool Watchlist\+::contains\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{stock }\end{DoxyParamCaption})}
+
+
+
+This method checks if the stock exists when buying. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to buy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_a40db638c2d80134ac0d98b77b37f352d}\label{class_watchlist_a40db638c2d80134ac0d98b77b37f352d}} 
+\index{Watchlist@{Watchlist}!getStock@{getStock}}
+\index{getStock@{getStock}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{getStock()}{getStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stock}{Stock}} Watchlist\+::get\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{stock }\end{DoxyParamCaption})}
+
+
+
+This method fetches the specified stock. 
+
+This method takes in a stock name as an argument, ie) A\+A\+PL. It then loops through the Hash\+Map to find if the stock exists. 
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The price of the stock 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jian Xie 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_aba901fd5f666aaa91bf8aeaa45dbb4c3}\label{class_watchlist_aba901fd5f666aaa91bf8aeaa45dbb4c3}} 
+\index{Watchlist@{Watchlist}!getStockList@{getStockList}}
+\index{getStockList@{getStockList}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{getStockList()}{getStockList()}}
+{\footnotesize\ttfamily map$<$ std\+::string, \mbox{\hyperlink{class_stock}{Stock}} $>$ Watchlist\+::get\+Stock\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method returns the \mbox{\hyperlink{class_watchlist}{Watchlist}}. 
+
+This method returns the entire \mbox{\hyperlink{class_watchlist}{Watchlist}} as a Hash\+Map. \begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_watchlist}{Watchlist}} as a Hash\+Map 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jian Xie 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_a70299a2bc3ca40537b2eda0576f42949}\label{class_watchlist_a70299a2bc3ca40537b2eda0576f42949}} 
+\index{Watchlist@{Watchlist}!insertToStockList@{insertToStockList}}
+\index{insertToStockList@{insertToStockList}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{insertToStockList()}{insertToStockList()}}
+{\footnotesize\ttfamily void Watchlist\+::insert\+To\+Stock\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stock}{Stock}}}]{new\+Stock }\end{DoxyParamCaption})}
+
+
+
+This method inserts a new stock to the watch list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Stock} & The stock that you want to add into the watchlist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_abd0988495df1a789f0a2a7a0a7be6b15}\label{class_watchlist_abd0988495df1a789f0a2a7a0a7be6b15}} 
+\index{Watchlist@{Watchlist}!removeStock@{removeStock}}
+\index{removeStock@{removeStock}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{removeStock()}{removeStock()}}
+{\footnotesize\ttfamily void Watchlist\+::remove\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{stock }\end{DoxyParamCaption})}
+
+
+
+This method removes the stock from the watchlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_watchlist_a967e0292b4f040af0d164571fcf2f82d}\label{class_watchlist_a967e0292b4f040af0d164571fcf2f82d}} 
+\index{Watchlist@{Watchlist}!updateStockList@{updateStockList}}
+\index{updateStockList@{updateStockList}!Watchlist@{Watchlist}}
+\doxysubsubsection{\texorpdfstring{updateStockList()}{updateStockList()}}
+{\footnotesize\ttfamily void Watchlist\+::update\+Stock\+List (\begin{DoxyParamCaption}\item[{std\+::string}]{stock,  }\item[{int}]{shares }\end{DoxyParamCaption})}
+
+
+
+This method changes the stock quantity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & The symbol of the company/stock you wish to change \\
+\hline
+{\em quantity} & The quantity you want to set it as an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jia Yu Man 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+watchlist.\+h\item 
+watchlist.\+cpp\end{DoxyCompactItemize}

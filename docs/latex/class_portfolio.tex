@@ -1,0 +1,273 @@
+\hypertarget{class_portfolio}{}\doxysection{Portfolio Class Reference}
+\label{class_portfolio}\index{Portfolio@{Portfolio}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_portfolio_a6ac990eb27c8a46d59240e16fa04e3d8}{get\+Amount\+Of\+Shares}} (std\+::string company)
+\begin{DoxyCompactList}\small\item\em This function gets the amount of shares from a stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a5fd99a99b80c931be984dc350c3e1bdc}{print\+Portfolio\+Stocks}} (\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$superlist)
+\begin{DoxyCompactList}\small\item\em This algorithm prints out the stocks and values of the portfolio. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_portfolio_af6556a642c6ce6bd4559de0c2b1be81a}{get\+Portfolio\+Value}} (\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$superlist)
+\begin{DoxyCompactList}\small\item\em This function retruns the portfolio value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_portfolio_a1d7ee678ffb5c9aaefcbb50f4c602e83}{get\+Buying\+Power}} ()
+\begin{DoxyCompactList}\small\item\em This function returns the buying power. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a042f6491230faebdc0609c9ef557ad49}{set\+Buying\+Power}} (double current\+Buying\+Power)
+\begin{DoxyCompactList}\small\item\em This function sets the buying power. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a357473c8090f2c827466c081bc509d84}{buy\+Stock}} (std\+::string company, int shares, \mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em This function buys the stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a66c6bfb8027fd52e0831e0f2a7a112c6}{sell\+Stock}} (std\+::string company, int shares, \mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em This function sells the stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a96443d9fa18c470cb78589591baa1dea}{print\+Portfolio\+Stocks\+Rec}} (\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$superlist)
+\begin{DoxyCompactList}\small\item\em This algorithm prints out the stocks and values of the portfolio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_ae5b66845edac89513762be570c95b6d8}{save\+List\+To\+Json}} (std\+::string user\+Name)
+\begin{DoxyCompactList}\small\item\em The function saves the current user\textquotesingle{}s portfolio to a json file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_portfolio_a98efc7505ca1e6006879aab78facf71c}{calculate\+Portfolio\+Value}} (\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$superlist)
+\begin{DoxyCompactList}\small\item\em This algorithm for counting the total stock value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_portfolio_ab9aed3798cce2ed3a2d3f07dd95db8ab}\label{class_portfolio_ab9aed3798cce2ed3a2d3f07dd95db8ab}} 
+\mbox{\hyperlink{class_watchlist}{Watchlist}} {\bfseries portfolio}
+\item 
+\mbox{\Hypertarget{class_portfolio_a2f5fa82ead9f9da04e306ff530464fad}\label{class_portfolio_a2f5fa82ead9f9da04e306ff530464fad}} 
+double {\bfseries current\+Portfolio\+Value}
+\item 
+\mbox{\Hypertarget{class_portfolio_a0db1d5a507c618ceae28e7b8531f76d6}\label{class_portfolio_a0db1d5a507c618ceae28e7b8531f76d6}} 
+double {\bfseries buying\+Power}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_portfolio_a357473c8090f2c827466c081bc509d84}\label{class_portfolio_a357473c8090f2c827466c081bc509d84}} 
+\index{Portfolio@{Portfolio}!buyStock@{buyStock}}
+\index{buyStock@{buyStock}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{buyStock()}{buyStock()}}
+{\footnotesize\ttfamily void Portfolio\+::buy\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{company,  }\item[{int}]{shares,  }\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+This function buys the stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em company} & is an string argument representing the company containing master list of all the stocks \\
+\hline
+{\em list} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a98efc7505ca1e6006879aab78facf71c}\label{class_portfolio_a98efc7505ca1e6006879aab78facf71c}} 
+\index{Portfolio@{Portfolio}!calculatePortfolioValue@{calculatePortfolioValue}}
+\index{calculatePortfolioValue@{calculatePortfolioValue}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{calculatePortfolioValue()}{calculatePortfolioValue()}}
+{\footnotesize\ttfamily double Portfolio\+::calculate\+Portfolio\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{superlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This algorithm for counting the total stock value. 
+
+This function takes all the stocks and the value of each, then it multiplies each and allows adds it to a total value
+
+
+\begin{DoxyParams}{Parameters}
+{\em superlist} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a double that represents the total value of stocks 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a6ac990eb27c8a46d59240e16fa04e3d8}\label{class_portfolio_a6ac990eb27c8a46d59240e16fa04e3d8}} 
+\index{Portfolio@{Portfolio}!getAmountOfShares@{getAmountOfShares}}
+\index{getAmountOfShares@{getAmountOfShares}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{getAmountOfShares()}{getAmountOfShares()}}
+{\footnotesize\ttfamily int Portfolio\+::get\+Amount\+Of\+Shares (\begin{DoxyParamCaption}\item[{std\+::string}]{company }\end{DoxyParamCaption})}
+
+
+
+This function gets the amount of shares from a stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & for the company \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int to show how many shares there are 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a1d7ee678ffb5c9aaefcbb50f4c602e83}\label{class_portfolio_a1d7ee678ffb5c9aaefcbb50f4c602e83}} 
+\index{Portfolio@{Portfolio}!getBuyingPower@{getBuyingPower}}
+\index{getBuyingPower@{getBuyingPower}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{getBuyingPower()}{getBuyingPower()}}
+{\footnotesize\ttfamily double Portfolio\+::get\+Buying\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function returns the buying power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_af6556a642c6ce6bd4559de0c2b1be81a}\label{class_portfolio_af6556a642c6ce6bd4559de0c2b1be81a}} 
+\index{Portfolio@{Portfolio}!getPortfolioValue@{getPortfolioValue}}
+\index{getPortfolioValue@{getPortfolioValue}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{getPortfolioValue()}{getPortfolioValue()}}
+{\footnotesize\ttfamily double Portfolio\+::get\+Portfolio\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{superlist }\end{DoxyParamCaption})}
+
+
+
+This function retruns the portfolio value. 
+
+Call the calculate portfolio value and return it
+
+
+\begin{DoxyParams}{Parameters}
+{\em superlist} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a5fd99a99b80c931be984dc350c3e1bdc}\label{class_portfolio_a5fd99a99b80c931be984dc350c3e1bdc}} 
+\index{Portfolio@{Portfolio}!printPortfolioStocks@{printPortfolioStocks}}
+\index{printPortfolioStocks@{printPortfolioStocks}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{printPortfolioStocks()}{printPortfolioStocks()}}
+{\footnotesize\ttfamily void Portfolio\+::print\+Portfolio\+Stocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{superlist }\end{DoxyParamCaption})}
+
+
+
+This algorithm prints out the stocks and values of the portfolio. 
+
+This function iterates over the stocks in the portfolio and prints out how many shares of each is owned. Then we show the portfolio values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em superlist} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a96443d9fa18c470cb78589591baa1dea}\label{class_portfolio_a96443d9fa18c470cb78589591baa1dea}} 
+\index{Portfolio@{Portfolio}!printPortfolioStocksRec@{printPortfolioStocksRec}}
+\index{printPortfolioStocksRec@{printPortfolioStocksRec}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{printPortfolioStocksRec()}{printPortfolioStocksRec()}}
+{\footnotesize\ttfamily void Portfolio\+::print\+Portfolio\+Stocks\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{superlist }\end{DoxyParamCaption})}
+
+
+
+This algorithm prints out the stocks and values of the portfolio. 
+
+This function iterates over the stocks in the portfolio and prints out how many shares of each is owned. Then we show the portfolio values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em superlist} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_ae5b66845edac89513762be570c95b6d8}\label{class_portfolio_ae5b66845edac89513762be570c95b6d8}} 
+\index{Portfolio@{Portfolio}!saveListToJson@{saveListToJson}}
+\index{saveListToJson@{saveListToJson}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{saveListToJson()}{saveListToJson()}}
+{\footnotesize\ttfamily void Portfolio\+::save\+List\+To\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+The function saves the current user\textquotesingle{}s portfolio to a json file. 
+
+The function saves the current user\textquotesingle{}s portfolio to a json file
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & the user\textquotesingle{}s declared name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a66c6bfb8027fd52e0831e0f2a7a112c6}\label{class_portfolio_a66c6bfb8027fd52e0831e0f2a7a112c6}} 
+\index{Portfolio@{Portfolio}!sellStock@{sellStock}}
+\index{sellStock@{sellStock}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{sellStock()}{sellStock()}}
+{\footnotesize\ttfamily void Portfolio\+::sell\+Stock (\begin{DoxyParamCaption}\item[{std\+::string}]{company,  }\item[{int}]{shares,  }\item[{\mbox{\hyperlink{class_watchlist}{Watchlist}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+This function sells the stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em company} & is an string argument representing the company containing master list of all the stocks \\
+\hline
+{\em list} & is an \mbox{\hyperlink{class_watchlist}{Watchlist}} argument of the watchlist class containing the master list of all the stocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jia Yu Man 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a042f6491230faebdc0609c9ef557ad49}\label{class_portfolio_a042f6491230faebdc0609c9ef557ad49}} 
+\index{Portfolio@{Portfolio}!setBuyingPower@{setBuyingPower}}
+\index{setBuyingPower@{setBuyingPower}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{setBuyingPower()}{setBuyingPower()}}
+{\footnotesize\ttfamily void Portfolio\+::set\+Buying\+Power (\begin{DoxyParamCaption}\item[{double}]{current\+Buying\+Power }\end{DoxyParamCaption})}
+
+
+
+This function sets the buying power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Daniel Cho 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+portfolio.\+h\item 
+portfolio.\+cpp\end{DoxyCompactItemize}

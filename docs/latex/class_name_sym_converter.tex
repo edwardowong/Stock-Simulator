@@ -1,0 +1,112 @@
+\hypertarget{class_name_sym_converter}{}\doxysection{Name\+Sym\+Converter Class Reference}
+\label{class_name_sym_converter}\index{NameSymConverter@{NameSymConverter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_name_sym_converter_ab2663f4c6ca497c15a49a1ac781ccd51}{$\sim$\+Name\+Sym\+Converter}} ()
+\begin{DoxyCompactList}\small\item\em This method is the destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_name_sym_converter_ab2f9055513a05c633a70bfd4c5f88126}{get\+Symbol}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em This method takes the company name as a parameter and returns its respective stock symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}} \mbox{\hyperlink{class_name_sym_converter_ad909f578fc45ac1471819392bdefcdee}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Static method that returns an instance of \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_name_sym_converter_a4ae05c70f4f4582451f03812fd74b163}{Name\+Sym\+Converter}} ()
+\begin{DoxyCompactList}\small\item\em Default private constructor, maps company names to stock symbols. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_name_sym_converter_a04712608dc4e4f88dd422a22353a99b7}\label{class_name_sym_converter_a04712608dc4e4f88dd422a22353a99b7}} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries name\+Sym\+Map}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_name_sym_converter_a762cd3e6307d0339494d11a22ff51630}\label{class_name_sym_converter_a762cd3e6307d0339494d11a22ff51630}} 
+static \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}} $\ast$ {\bfseries \+\_\+instance} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_name_sym_converter_a4ae05c70f4f4582451f03812fd74b163}\label{class_name_sym_converter_a4ae05c70f4f4582451f03812fd74b163}} 
+\index{NameSymConverter@{NameSymConverter}!NameSymConverter@{NameSymConverter}}
+\index{NameSymConverter@{NameSymConverter}!NameSymConverter@{NameSymConverter}}
+\doxysubsubsection{\texorpdfstring{NameSymConverter()}{NameSymConverter()}}
+{\footnotesize\ttfamily Name\+Sym\+Converter\+::\+Name\+Sym\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Default private constructor, maps company names to stock symbols. 
+
+Default constructor reads company names and their stock symbols from symbols\+And\+Names.\+txt then maps them \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_name_sym_converter_ab2663f4c6ca497c15a49a1ac781ccd51}\label{class_name_sym_converter_ab2663f4c6ca497c15a49a1ac781ccd51}} 
+\index{NameSymConverter@{NameSymConverter}!````~NameSymConverter@{$\sim$NameSymConverter}}
+\index{````~NameSymConverter@{$\sim$NameSymConverter}!NameSymConverter@{NameSymConverter}}
+\doxysubsubsection{\texorpdfstring{$\sim$NameSymConverter()}{~NameSymConverter()}}
+{\footnotesize\ttfamily Name\+Sym\+Converter\+::$\sim$\+Name\+Sym\+Converter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is the destructor. 
+
+This method is simply the destructor for the client class. \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_name_sym_converter_ab2f9055513a05c633a70bfd4c5f88126}\label{class_name_sym_converter_ab2f9055513a05c633a70bfd4c5f88126}} 
+\index{NameSymConverter@{NameSymConverter}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!NameSymConverter@{NameSymConverter}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily string Name\+Sym\+Converter\+::get\+Symbol (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+This method takes the company name as a parameter and returns its respective stock symbol. 
+
+This method takes the company name as a parameter and returns its respective stock symbol 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_name_sym_converter_ad909f578fc45ac1471819392bdefcdee}\label{class_name_sym_converter_ad909f578fc45ac1471819392bdefcdee}} 
+\index{NameSymConverter@{NameSymConverter}!instance@{instance}}
+\index{instance@{instance}!NameSymConverter@{NameSymConverter}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}} Name\+Sym\+Converter\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static method that returns an instance of \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}}. 
+
+Singleton design implementation; static method returns the instance of \mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}}, or creates one if it doesn\textquotesingle{}t exist yet then returns it \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_name_sym_converter}{Name\+Sym\+Converter}} 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yan Feng Lin 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+name\+Sym\+Converter.\+h\item 
+name\+Sym\+Converter.\+cpp\end{DoxyCompactItemize}
